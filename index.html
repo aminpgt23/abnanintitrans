@@ -142,13 +142,6 @@ function Navbar() {
                 {l.label}
               </a>
             ))}
-            <a href="#" className={`px-5 py-2 rounded-xl text-sm font-bold transition-all active:scale-95 ${
-              scrolled 
-              ? 'bg-blue-600 text-white shadow-lg shadow-blue-200 hover:bg-blue-700' 
-              : 'bg-blue-600 text-white hover:bg-blue-700'
-            }`}>
-              Login
-            </a>
           </div>
 
           <button className="md:hidden p-2 focus:outline-none" onClick={() => setMenuOpen(!menuOpen)}>
@@ -162,7 +155,6 @@ function Navbar() {
             {links.map(l => (
               <a key={l.label} href={l.href} className="block text-gray-800 font-semibold text-lg py-2" onClick={() => setMenuOpen(false)}>{l.label}</a>
             ))}
-            <a href="#" className="block w-full text-center bg-blue-600 text-white py-3 rounded-xl font-bold shadow-lg" onClick={() => setMenuOpen(false)}>Login</a>
           </div>
         </div>
       </div>
